@@ -6,6 +6,11 @@ import '@/styles/utility-patterns.css'
 import '@/styles/notion.css' //  重写部分notion样式
 import 'react-notion-x/src/styles.css' // 原版的react-notion-x
 
+
+import { SpeedInsights } from "@vercel/speed-insights/next" //2024年2月9日 加入Vercel的Speed Insights，用于优化网站加载速度
+import { Analytics } from "@vercel/analytics/react" //2024年2月9日 加入Vercel的Analytics，用于统计网站访问数据
+
+
 import useAdjustStyle from '@/hooks/useAdjustStyle'
 import { GlobalContextProvider } from '@/lib/global'
 import { getBaseLayoutByTheme } from '@/themes/theme'

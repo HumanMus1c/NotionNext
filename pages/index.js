@@ -15,9 +15,13 @@ import { Analytics } from "@vercel/analytics/react" //2024年2月9日 加入Verc
  * @param {*} props
  * @returns
  */
+
+
+
 const Index = props => {
   const theme = siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
   return <DynamicLayout theme={theme} layoutName='LayoutIndex' {...props} />
+  
 }
 
 /**
